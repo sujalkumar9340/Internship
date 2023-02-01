@@ -1,0 +1,14 @@
+package Araaysprts;
+
+import java.util.Scanner;
+//This programe is used for find the Are and perimeter Of rectangle
+public class Rectangle {
+public static void main(String[]args) {
+	Scanner st=new Scanner(System.in);
+	System.out.println("Enter the Length and Breath");
+	int Length=st.nextInt();
+	int Breath=st.nextInt();
+	int Area=Length*Breath;
+	int Perimeter=2* ( Length+Breath);
+	System.out.println("Area &  perimeter  of Rectangle ="+Area+ ","+Perimeter);
+}}
