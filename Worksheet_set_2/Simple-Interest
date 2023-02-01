@@ -1,0 +1,23 @@
+package Araaysprts;
+
+import java.util.Scanner;
+//This programe is used to determine the simple interest 
+public class SimpleInterest {
+public static  void main(String[]args) {
+	
+	Scanner st=new Scanner(System.in);
+	System.out.println("Enter the princpal");
+	
+	int p=st.nextInt() ;
+	System.out.println("Enter the Rate");
+	int R=st.nextInt();
+	System.out.println("Enter the time");
+	int Time=st.nextInt();
+	float interest=(p*R*Time)/100;
+	System.out.println("simple interest="+interest);
+float Amount=interest+p;
+	System.out.println( "Amount  "+      Amount);
+	
+	
+}
+}
