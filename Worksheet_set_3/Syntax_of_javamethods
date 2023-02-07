@@ -1,0 +1,16 @@
+
+//syntax  of java method 
+// method must be with return type 
+// and name of method and Access modifier depends on us
+// ()  ->  this is symbol to create the method in java and after the 
+// () this symbol takes the curly braces and write the code inside it
+// example ->  
+//int print(){ THIS THE SYNTAX TO create method in java
+//}
+
+public class Syntax_Of_Java_Method {
+	public static void main(String[]args) {
+		
+	}
+
+}
