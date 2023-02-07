@@ -1,0 +1,40 @@
+class Example{
+private int number ;
+private String name ;
+// Here getter setter method is used to access the private instance variable
+
+public int getNumber() {
+	return number;
+}
+public void setNumber(int number) {
+	this.number = number;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+	void printDetails() {
+		System.out.println( getNumber());
+		System.out.println(getName());	
+	}
+	
+}
+public class Demo {
+	
+public static void main(String []args) {
+	// THIS IS JAVA METHOD
+			// here public is access modifier;
+			// static is keyword that is used call a method without making the object;
+			//void is return type that that return nothing because method must be with return type;
+			//main is name of method it is compulsory method  because it is get way of program;
+			// () it is symbol of method that indicate that it is method and inside this we pass String 
+			// type [] array argument String type argument pass that the reason String is immutable 
+			// otherwise compiler get confused;
+	Example Ex=new Example();
+	Ex.setName("sujal kumar");
+	Ex.setNumber(123);
+	Ex.printDetails();
+}
+}
