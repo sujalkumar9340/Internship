@@ -1,0 +1,129 @@
+package oops_concepts;
+// IN THIS PACKAGE INHERITANCE ,ABSTRACTION,POLYMORPHISM and ENCAPSULATION
+class Inheritance { // this is parrent of child_of inheritance
+
+	void general_transport() {
+		System.out.println(
+				"this is general method we want to available all the child class who want to extends this inheritance class ");
+	}
+	
+	void students() {
+		System.out.println("this is parents class so therefore we taken the sudent of entire class ");
+	}
+}
+
+class child_Of_Inheritance extends Inheritance {// this is child of inhertance extends the inheritance
+	void transport() {
+		System.out.println("this method is used to stuff with general transport");
+	}
+
+	void About_Transport() {
+		System.out.println("what are the facilities provided by the genral transport ");
+	}
+
+	void students_class_10th() {
+		System.out.println("this method is used to mesurning the standard of individual class");
+	}
+}
+
+class Binding_up_of_data { // This class is used to define Encapsulation Example
+
+	private int student_id;
+	private String name;
+
+	public int getStudent_id() {
+		return student_id;
+	}
+
+	public void setStudent_id(int student_id) {
+		this.student_id = student_id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}
+
+class Helper {
+	static int Multiply(int a, int b) {
+		return a * b;
+	} // This is Example of method overloading in polymorphism
+
+	static double Multiply(double a, double b) {
+		return a * b;
+	}
+
+	void print() {
+		System.out.println("this method is taken for overridde");
+	}
+}
+
+class Apply extends Helper {
+	@Override
+	void print() {
+		System.out.println("this method is used to override the void print method");
+	}
+
+}
+
+abstract class Abstraction_shap {
+	String color;
+
+	// these are abstract methods
+	abstract double area();
+
+	public abstract String toString();
+
+	public Abstraction_shap(String color) {
+
+		System.out.println("Absatrction_shap constructor called");
+		this.color = color;
+	}
+
+	// this is concrete method
+	public String getcolor() {
+		return color;
+	}
+}
+
+class circle extends Abstraction_shap {// gukhh
+	double radius;
+
+	public circle(String color) {
+		super(color);
+		System.out.println("circle constructor called");
+
+	}
+
+	@Override
+	double area() {
+		return Math.PI * Math.pow(radius, 2);
+	}
+
+	@Override
+	public String toString() {
+		return "circle color is" + super.getcolor() + "and area is : " + area();
+	}
+
+}
+
+public class OopsExample {
+	public static void main(String []args) {
+	
+		
+		child_Of_Inheritance obj1=new child_Of_Inheritance();
+		obj1.transport();
+		Binding_up_of_data obj2=new Binding_up_of_data();
+		obj2.setStudent_id(23);
+		System.out.println(obj2.getStudent_id());
+		Apply obj3=new Apply();
+		obj3.print();
+	System.out.println(obj3.Multiply(3,8));
+		
+		circle obj4=new circle("red");
+		
+	}}
