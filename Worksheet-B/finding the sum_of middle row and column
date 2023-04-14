@@ -1,0 +1,37 @@
+
+a java Program to Sum of middle row and column in Matrix
+
+
+public class MatrixSumMiddleRowColumn {
+    
+    public static void main(String[] args) {
+        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        
+        //Calculate the middle row and column index
+        int middleRow = rows / 2;
+        int middleCol = cols / 2;
+        
+        int rowSum = 0, colSum = 0;
+        
+        //Sum up the middle row elements
+        for(int j = 0; j < cols; j++) {
+            rowSum += matrix[middleRow][j];
+        }
+        
+        //Sum up the middle column elements
+        for(int i = 0; i < rows; i++) {
+            colSum += matrix[i][middleCol];
+        }
+        
+        System.out.println("Sum of middle row: " + rowSum);
+        System.out.println("Sum of middle column: " + colSum);
+    }
+}
+
+     
+
+
+
+
