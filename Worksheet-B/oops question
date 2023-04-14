@@ -1,0 +1,23 @@
+What is the output for the below code ?
+public class A {
+public A(int i){
+System.out.println(i);
+}
+}
+1. public class B extends A{
+2. public B(){
+3. super(6);
+4. this();
+5. }
+6. }
+public class Test{
+public static void main (String[] args){
+B b = new B();
+}
+}
+A :- 0
+B:-6
+C:- Compilation fails   due to an error on lines 3            
+D:-Compilation fails
+due to an error on lines 4
+ANSWER:- c 
